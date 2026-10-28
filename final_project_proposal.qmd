@@ -25,3 +25,7 @@
     - variance will be based on number of field goal attempts for their career
 
     - use college data for rookies but still have quite a bit of variance
+
+  - Prior explanation and justifying our prior selection
+
+  - How we are selecting our players (number of clutch games, number of clutch shots)
