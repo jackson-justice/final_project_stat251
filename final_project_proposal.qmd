@@ -1,0 +1,27 @@
+# Final Project Proposal
+
+### Joe Asay, Brian Taylor, Jackson Justice
+
+- Research Question(s)
+
+  - Who is actually clutch?
+
+  - Comparing players shooting percentage in the clutch to themselves not in the clutch.
+
+  - Our hypothesis is that they will have the same shooting percentage whether in the clutch or not in the clutch. Therefore, they will have the same priors with different likelihoods based on the data we collect, which will then create different posteriors.
+
+- Data Source and Description
+
+  - hoopR
+
+  - has nba and college data
+
+- Exploratory Analysis/EDA
+
+  - use get ab function
+
+    - mean will be career field goal percentage
+
+    - variance will be based on number of field goal attempts for their career
+
+    - use college data for rookies but still have quite a bit of variance
