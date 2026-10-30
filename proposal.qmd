@@ -1,0 +1,35 @@
+---
+title: "Who Is Actually Clutch in the NBA?"
+author:
+  - Joe Asay
+  - Brian Taylor
+  - Jackson Justice
+format:
+  pdf:
+    geometry: margin=0.7in
+    fontsize: 10pt
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+# Research Question
+
+We ask whether NBA players shoot better or worse in clutch situations than in their own non-clutch situations during the 2025–26 regular season. We define clutch using the NBA standard: the final five minutes of the fourth quarter or overtime when the pre-shot scoring margin is five points or fewer. For each player $i$, our comparison is $\Delta_i = p_{i,\mathrm{clutch}} - p_{i,\mathrm{nonclutch}}$; our initial hypothesis is that the two underlying shooting probabilities are equal.
+
+# Data
+
+We obtained NBA play-by-play data for the completed 2025–26 regular season using the R package [hoopR](https://hoopr.sportsdataverse.org/reference/load_nba_pbp.html). Each record identifies the game and shooter and includes the period, game clock, team scores, shot value, and made/missed outcome needed to classify field-goal attempts; free throws were excluded. The available play-by-play covers 1,229 completed standard regular-season games. The exploratory analysis includes every player with at least one clutch field-goal attempt; the first figure displays the 20 players with the most clutch attempts so that individual comparisons remain readable.
+
+# Exploratory Analysis
+
+Across the available games, 413 players attempted at least one clutch field goal. They combined for 7,138 clutch attempts, with a field-goal percentage of 43.5%, compared with 47.2% on non-clutch attempts.
+
+The first figure connects each player's non-clutch and clutch percentages; points farther to the right represent higher observed shooting percentages. The second figure displays each player's observed difference, $\widehat{\Delta}_i$, against the number of clutch attempts. Points above zero indicate a higher observed clutch percentage, while points below zero indicate a lower observed clutch percentage. The attempt count shows how much clutch data supports each observed difference.
+
+\newpage
+
+![Clutch and non-clutch field-goal percentages for the 20 players with the most clutch attempts.](figures/player_fg_comparison.png){width=76% fig-align="center"}
+
+![Observed shooting differences plotted against clutch field-goal attempts.](figures/attempts_vs_difference.png){width=76% fig-align="center"}

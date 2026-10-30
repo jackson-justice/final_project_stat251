@@ -1,0 +1,18 @@
+# R and IDE files
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# Downloaded and processed data (created by the scripts)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Quarto output and caches
+.quarto/
+_freeze/
+proposal.html
+proposal.tex
+**/*.quarto_ipynb
