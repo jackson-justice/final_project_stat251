@@ -26,12 +26,12 @@ For our Bayesian analysis, we will use Beta-Binomial models to estimate four sho
 
 # Exploratory Analysis
 
-Across the available games, 413 players attempted at least one clutch field goal. They combined for 7,138 clutch attempts. We calculate eFG% as $(FGM + 0.5 \times 3PM)/FGA$, accounting for the additional value of made three-pointers.
+Across the available games, 413 players attempted at least one clutch field goal. They combined for 7,138 clutch attempts. Overall, clutch attempts had an eFG of 49.9%, compared with 54.4% on non-clutch attempts. We calculate eFG% as $(FGM + 0.5 \times 3PM)/FGA$, accounting for the additional value of made three-pointers.
 
 The first figure connects each player's non-clutch and clutch eFG%; points farther to the right represent higher observed shooting efficiency. The second figure displays each player's observed difference, $\widehat{\Delta}_i$, against the number of clutch attempts. Points above zero indicate a higher observed clutch eFG%, while points below zero indicate a lower observed eFG%. The attempt count shows how much clutch data supports each observed difference.
 
 \newpage
 
-![Clutch and non-clutch eFG% for the 20 players with the most clutch attempts.](figures/player_fg_comparison.png){width=76% fig-align="center"}
+![Clutch and non-clutch eFG% for the 20 players with the most clutch attempts.](figures/player_fg_comparison.png){width="76%" fig-align="center"}
 
-![Observed eFG% differences plotted against clutch field-goal attempts.](figures/attempts_vs_difference.png){width=76% fig-align="center"}
+![Observed eFG% differences plotted against clutch field-goal attempts.](figures/attempts_vs_difference.png){width="76%" fig-align="center"}
